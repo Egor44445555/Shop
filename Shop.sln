@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{50A17DA1-3556-4046-CEDC-33EB466D9C32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackageCache", "PackageCache", "{C5C0596F-4AD5-7F56-9391-3083F761A456}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "com.svermeulen.extenject@31f06cf810", "com.svermeulen.extenject@31f06cf810", "{F637C88E-7FE2-DBC3-346D-E7CD64F210A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject", "Library\PackageCache\com.svermeulen.extenject@31f06cf810\Source\Zenject.csproj", "{46616EB7-20CA-F1EA-8373-186A60C4039B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptionalExtras", "OptionalExtras", "{3EB0BFAA-CE29-84A3-3CE8-1025AAFDCB44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-ReflectionBaking", "Library\PackageCache\com.svermeulen.extenject@31f06cf810\OptionalExtras\ReflectionBaking\Zenject-ReflectionBaking.csproj", "{822EB2D9-66F1-225B-2231-E6D47D6D2145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-Signals", "Library\PackageCache\com.svermeulen.extenject@31f06cf810\OptionalExtras\Signals\Zenject-Signals.csproj", "{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46616EB7-20CA-F1EA-8373-186A60C4039B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46616EB7-20CA-F1EA-8373-186A60C4039B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46616EB7-20CA-F1EA-8373-186A60C4039B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46616EB7-20CA-F1EA-8373-186A60C4039B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822EB2D9-66F1-225B-2231-E6D47D6D2145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822EB2D9-66F1-225B-2231-E6D47D6D2145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822EB2D9-66F1-225B-2231-E6D47D6D2145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822EB2D9-66F1-225B-2231-E6D47D6D2145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5C0596F-4AD5-7F56-9391-3083F761A456} = {50A17DA1-3556-4046-CEDC-33EB466D9C32}
+		{F637C88E-7FE2-DBC3-346D-E7CD64F210A3} = {C5C0596F-4AD5-7F56-9391-3083F761A456}
+		{46616EB7-20CA-F1EA-8373-186A60C4039B} = {F637C88E-7FE2-DBC3-346D-E7CD64F210A3}
+		{3EB0BFAA-CE29-84A3-3CE8-1025AAFDCB44} = {F637C88E-7FE2-DBC3-346D-E7CD64F210A3}
+		{822EB2D9-66F1-225B-2231-E6D47D6D2145} = {3EB0BFAA-CE29-84A3-3CE8-1025AAFDCB44}
+		{55BD42C7-A801-ACDE-B2CA-EF31EFC09CE4} = {3EB0BFAA-CE29-84A3-3CE8-1025AAFDCB44}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4907BB7F-3C64-4B37-A111-09C73D184C80}
+	EndGlobalSection
+EndGlobal
