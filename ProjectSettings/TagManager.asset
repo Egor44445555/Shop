@@ -7,11 +7,14 @@ TagManager:
   - ship
   - asteroid
   - Joystick
+  - Door
+  - Collected
+  - Person
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Collectible
   - Water
   - UI
   - 

@@ -5,12 +5,10 @@ using UnityEngine.EventSystems;
 
 public class CameraPerson : MonoBehaviour
 {
+    public static CameraPerson main;
     public Transform target;
     public Vector3 offsetPos;
-    public float moveSpeed = 5;
-    public float smooth = 0.2f;
-
-    [Header("Camera Settings")]
+    
     [SerializeField] float rotationSpeed = 60f;
     [SerializeField] float minVerticalAngle = -80f;
     [SerializeField] float maxVerticalAngle = 80f;
@@ -21,18 +19,12 @@ public class CameraPerson : MonoBehaviour
     Vector2 touchDeltaPosition;
     Vector3 cameraRotation;
 
+    void Awake()
+    {
+        main = this;
+    }
+
     void Update()
-    {
-        HandleTouchInput();
-    }
-
-    void LateUpdate()
-    {
-        targetPos = target.transform.position + offsetPos;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smooth);
-    }
-
-    void HandleTouchInput()
     {
         if (Input.touchCount > 0)
         {
@@ -49,13 +41,16 @@ public class CameraPerson : MonoBehaviour
                     break;
 
                 case TouchPhase.Moved: touchDeltaPosition = touch.position - touchStartPosition;
-
                     RotateCamera(touchDeltaPosition);
-
                     touchStartPosition = touch.position;
                     break;
             }
         }
+    }
+
+    void LateUpdate()
+    {
+        transform.position = target.transform.position + offsetPos;
     }
 
     void RotateCamera(Vector2 deltaPosition)
