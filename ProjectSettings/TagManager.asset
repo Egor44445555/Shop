@@ -4,17 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ship
-  - asteroid
-  - Joystick
-  - Door
-  - Collected
-  - Person
+  - Floor
+  - DragArea
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Collectible
+  - 
   - Water
   - UI
   - 
